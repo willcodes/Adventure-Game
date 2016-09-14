@@ -182,7 +182,8 @@ function useItem(){
 				break;
 			case "sword":
 				if(mapLocation === 4) {
-					gameMessage = "The monsters flee when they see you approach, you walk towards the nearby town to find hookers and booze. Thanks for playing!";
+					gameMessage = "The demon stops telling racist jokes when you swing your sword.. you walk towards the nearby town to find hookers and booze. Thanks for playing!";
+					storyMessages[mapLocation] = "";
 					gameWon();
 
 				}
@@ -214,7 +215,7 @@ function render(){
 
 function gameWon(){
 	$(document).ready(function(){
-		$(".youwin").fadeIn(10000);
+		$(".youwin").fadeIn(20000);
 		$(".youwin").append("<audio src='winner.ogg' autoplay></audio>");
 	});
 }
