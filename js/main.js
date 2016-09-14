@@ -53,8 +53,8 @@ var playersInput = "";
 
 //game message
 var gameMessage = "<br>Your caravan has crashed! You need to get to the local town. "
-gameMessage += "Try any of these words: " 
-gameMessage += "north, south, take, use";
+gameMessage += "Try any of these words:" ;
+gameMessage += "north, south, take, use. If interacting with an object type" + "<br>use/take " + "+ object";
 
 //actions
 var actionsIKnow = ["north", "south", "take", "use"];
